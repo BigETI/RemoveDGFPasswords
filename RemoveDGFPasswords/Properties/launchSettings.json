@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "RemoveDGFPasswords": {
+      "commandName": "Project",
+      "commandLineArgs": "TEST.DGF -o TEST_WP.DGF"
+    }
+  }
+}
