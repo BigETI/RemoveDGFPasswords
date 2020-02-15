@@ -243,9 +243,9 @@ namespace RemoveDGFPasswords
                                 Console.WriteLine("\"...");
                             }
                             DGF dgf = DGF.Open(input_file_path);
-                            dgf.EncryptedEditPassword = null;
-                            dgf.EncryptedPlayPassword = null;
-                            dgf.EncryptedApplyPlayPasswordUntilGardenNumber = null;
+                            dgf.EditPassword = string.Empty;
+                            dgf.PlayPassword = string.Empty;
+                            dgf.ApplyPlayPasswordUntilGardenNumber = 1;
                             if (dgf == null)
                             {
                                 Console.Error.Write("Could not open file \"");
