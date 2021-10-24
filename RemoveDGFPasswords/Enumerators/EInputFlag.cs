@@ -6,7 +6,7 @@ namespace RemoveDGFPasswords
     /// <summary>
     /// Input flag enumerator
     /// </summary>
-    public enum EInputFlag
+    internal enum EInputFlag
     {
         /// <summary>
         /// No input flag

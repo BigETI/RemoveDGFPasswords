@@ -9,7 +9,7 @@ using System.IO;
 namespace RemoveDGFPasswords
 {
     /// <summary>
-    /// Program class
+    /// A class that describes this program
     /// </summary>
     internal class Program
     {
@@ -242,7 +242,7 @@ namespace RemoveDGFPasswords
                                 Console.Write(input_file_path);
                                 Console.WriteLine("\"...");
                             }
-                            DGF dgf = DGF.Open(input_file_path);
+                            IDGF dgf = DGFIO.OpenDGF(input_file_path);
                             dgf.EditPassword = string.Empty;
                             dgf.PlayPassword = string.Empty;
                             dgf.ApplyPlayPasswordUntilGardenNumber = 1;
